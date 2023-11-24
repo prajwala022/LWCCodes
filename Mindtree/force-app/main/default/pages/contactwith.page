@@ -1,0 +1,14 @@
+<apex:page controller="MyDemo1">
+<apex:form >
+<apex:pageBlock >
+<apex:pageBlockSection >
+<apex:inputField value="{!MyDemo1.FirstName}"/>
+<apex:inputField value="{!MyDemo1.LastName}"/>
+<apex:inputField value="{!MyDemo1.Email}"/>
+</apex:pageBlockSection>
+<apex:pageBlockButtons >
+<apex:commandButton value="{!Save}" action="{!Save}"/>
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>
+  </apex:page>

@@ -1,0 +1,13 @@
+<aura:component controller="MerchInfo" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="mName" type="String" default=""/>
+     <aura:attribute name="mDesc" type="String" default=""/>
+     <aura:attribute name="mStock" type="String" default=""/>
+     <aura:attribute name="mPrice" type="String" default=""/>
+    
+    <lightning:input label="Enter Merch Name" type="text" value="{!v.mName}"/>
+    <lightning:input label="Enter Merch Desc" type="text" value="{!v.mDesc}"/>
+    <lightning:input label="Enter Merch Stock" type="text" value="{!v.mStock}"/>
+    <lightning:input label="Enter Merch Price" type="text" value="{!v.mPrice}"/>
+    
+    <lightning:button name="MerchInfo" label="Save" onclick="{!c.myMethod}"/>
+</aura:component>

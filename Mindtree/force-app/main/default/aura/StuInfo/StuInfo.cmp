@@ -1,0 +1,13 @@
+<aura:component controller="StuInfo" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="stuName" type="String" default=""/>
+    <aura:attribute name="stuFName" type="String" default=""/>
+    <aura:attribute name="stuEmail" type="String" default=""/>
+    <aura:attribute name="stuFees" type="String" default=""/>
+    
+    <lightning:input type="text" label="Enter stu Name" value="{!v.stuName}"/>
+    <lightning:input type="text" label="Enter stu FatherNae" value="{!v.stuFName}"/>
+    <lightning:input type="text" label="Enter stu Email" value="{!v.stuEmail}"/>
+    <lightning:input type="text" label="Enter stu Fees" value="{!v.stuFees}"/>
+    
+    <lightning:button name="stuInfo" label="Save" onclick="{!c.myMethod}"/>
+</aura:component>

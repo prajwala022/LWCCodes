@@ -1,0 +1,16 @@
+<template>
+    <div>
+        <lightning-input 
+          type="text"
+          label="Student Name"
+          value={studentName}
+          onchange={handleOnChangename}
+        ></lightning-input>
+        <lightning-input type="text" label="Student Father Name" value={studentFatherName} onchange={handleOnChangeFname}></lightning-input>
+        <lightning-input type="text" label="Student Email" value={studentEmail} onchange={handleOnchangeEmail}></lightning-input>
+        <lightning-input type="text" label="Student Fees" value={StudentFees} onchange={handleOnChangeFees}></lightning-input>
+    
+    <lightning-button variant="Brand" label="Save" title="Ckick to Insert " onclick={initiateinsert}></lightning-button>
+    </div> 
+    
+</template>

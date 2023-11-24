@@ -1,0 +1,6 @@
+<apex:page controller="MyDemo">
+  <apex:form >
+  Welcome to this page:{!$User.FirstName}<br></br>
+  <apex:inputtext value="{!MyDemo.name}"/>
+  </apex:form>
+</apex:page>

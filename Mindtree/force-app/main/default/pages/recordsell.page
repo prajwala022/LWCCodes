@@ -1,0 +1,13 @@
+<apex:page standardController="SellItem__c" recordSetVar="Sell">
+  <apex:form >
+  <apex:pageBlock >
+  <apex:pageBlockTable value="{!Sell}" var="S">
+  <apex:column value="{!S.Name}"/>
+  </apex:pageBlockTable>
+  <apex:commandButton value="<" action="{!First}"/>
+  <apex:commandButton value="<<" action="{!Previous}"/>
+  <apex:commandButton value=">>" action="{!Next}"/>
+  <apex:commandButton value=">" action="{!Last}"/>
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

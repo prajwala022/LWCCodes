@@ -1,0 +1,6 @@
+<apex:page controller="MyClass">
+  <apex:form >
+  Welcome to this Custom Department:{!$User.FirstName} <br></br>
+  <apex:inputtext value="{!MyClass.name}"/>
+</apex:form>
+</apex:page>

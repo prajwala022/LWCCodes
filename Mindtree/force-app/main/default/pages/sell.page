@@ -1,0 +1,15 @@
+<apex:page standardController="SellItem__c">
+  <apex:form >
+  <apex:pageBlock title="All Information">
+  <apex:pageBlockSection columns="3" title="SellItem Information">
+  <apex:inputField value="{!SellItem__c.Name}"/>
+  <apex:inputField value="{!SellItem__c.SellItem_Desc__c}"/>
+  <apex:inputField value="{!SellItem__c.SellItem_Stock__c}"/>
+  </apex:pageBlockSection>
+  <apex:pageBlockButtons >
+  <apex:commandButton value="Save" action="{!Save}"/>
+  <apex:commandButton value="Cancel" action="{!Cancel}" />
+  </apex:pageBlockButtons>
+  </apex:pageBlock>
+  </apex:form>
+</apex:page>

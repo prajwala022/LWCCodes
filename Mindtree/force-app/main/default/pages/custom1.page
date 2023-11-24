@@ -1,0 +1,7 @@
+<apex:page controller="MyClass2">
+<apex:form >
+  Welcome to Custom Page : {!$User.FirstName} <br></br>
+  <apex:inputtext value="{!MyClass2.name}"/>
+  <apex:commandButton value="Save" action="{!Save}"/>
+  </apex:form>
+</apex:page>

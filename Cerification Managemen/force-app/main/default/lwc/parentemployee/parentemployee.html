@@ -1,4 +1,10 @@
 <template>
+    <lightning-layout multiple-rows>
+    <lightning-layout-item padding="around-small" size="4">
     <c-searchemployee ongetemployeedetails={handleEmployee}></c-searchemployee>
+    </lightning-layout-item>
+    <lightning-layout-item padding="around-small" size="8">
     <c-employeesearchresult searchresults={searchDetail}></c-employeesearchresult>
+    </lightning-layout-item>
+    </lightning-layout>
     </template>
